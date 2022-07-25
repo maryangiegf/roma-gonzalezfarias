@@ -27,11 +27,13 @@ header {
     height: 100px;
     top:0;
     position: sticky;
+    background-color: #e9d3d3;
+    background-image: linear-gradient(90deg, #e9d3d3 0%, #7c747c 100%);
 }
 .titulo {
     grid-area: titulo;
     margin-right: 20px;
-    color: rgb(253, 253, 253);
+    color: rgb(69, 67, 67);
     font-size: 45px;
     font-family:arima;
 }
