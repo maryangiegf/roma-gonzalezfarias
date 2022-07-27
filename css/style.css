@@ -9,19 +9,18 @@
 }
 .roma {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
-    "header" "header" "header"
-    "main" "main" "main"
-    "main" "main" "main"
-    "main" "main" "main"
-    "footer" "footer" "footer";
+    "header header header"
+    "main main main"
+    "main main main" 
+    "main main main" 
+    "footer footer footer";
 }
 header {
     grid-area: header;
     background-color: #5e5d5b;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -31,7 +30,7 @@ header {
     background-image: linear-gradient(90deg, #e9d3d3 0%, #7c747c 100%);
 }
 .titulo {
-    grid-area: titulo;
+    grid-area: header;
     margin-right: 20px;
     color: rgb(69, 67, 67);
     font-size: 45px;
@@ -44,7 +43,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 .navBar ul li {
     list-style: none;
     margin: 0 10px;
@@ -68,7 +66,6 @@ main {
 .loba {
     background-image: url(../img/pexels-nikita-belokhonov-5959325\ \(1\).jpg);
 }
-
 .lugares {
     background-color: #5e5d5b;} 
 
@@ -82,7 +79,6 @@ main {
     background-image: url(../img/pexels-alex-andrews-821754\ \(1\).jpg);
     background-size: cover;
 }
-
 h2 {
     font-family:arima;
     font-size: 40px;
@@ -97,7 +93,7 @@ h2 {
    justify-content: center;
 }
 .videoDeRoma {
-    grid-area: videoDeRoma;
+    grid-area: main;
     height: 400px;
     width: 600px;
     padding: 30px 25px;
@@ -114,13 +110,13 @@ h2 {
     justify-content: space-between;
 }
 .centroHistorico {
-    grid-area: vinoTorrontes;
+    grid-area: main;
     height: 400px;
     width: 600px;
     padding: 30px 25px;
 }
 .mainTextoUno {
-    grid-area: mainTextoUno;
+    grid-area: main;
     font-family:arima;
     font-size: 25px;
     padding-left: 150px;
@@ -130,7 +126,7 @@ h2 {
     color: white;
 }
 .mainTextoDos {
-    grid-area: mainTextoDos;
+    grid-area: main;
     display: flex;
     font-family:arima;
     font-size: 20px;
@@ -140,7 +136,7 @@ h2 {
     color: white;
 }
 .mainTextoTres {
-    grid-area: mainTextoTres;
+    grid-area: main;
     display: flex;
     font-family:arima;
     font-size: 20px;
@@ -148,27 +144,9 @@ h2 {
     text-align:justify;
     color: white;
 }
-.contenedor {
-    font-family:arima;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    color: black;
-}
-
-.contenedorDos {
-    font-family:arima;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: #BDE5CE; 
-    padding-bottom: 50px;
-
-}
 .fieldset{
     padding-bottom: 20px;
 }
-
 form {
     display: flex;
     justify-content: center;
@@ -176,7 +154,6 @@ form {
     font-size: 22px;
     font-weight: bolder;
 }
-
 #Nombre {
     width: 350px;
 }
@@ -203,10 +180,10 @@ footer {
     padding: 0 15px;
 }
 .footer__contenido {
-    grid-area: footer__contenido;
+    grid-area: footer;
     margin-right: 20px;
     color: black;
-    font-size: 15px;
+    font-size: 15px ;
     font-family:arima;
 }
 .img__footer3 {
@@ -214,7 +191,6 @@ footer {
     height: 30px;
     width: 25px;
     padding-top: 15px;
-
 }
 
 @media screen and (max-width: 768px) and (max-width: 1024px) {
