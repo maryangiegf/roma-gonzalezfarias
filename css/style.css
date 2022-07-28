@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: Arima;
@@ -29,9 +30,10 @@ header {
     position: sticky;
     background-color: #e9d3d3;
     background-image: linear-gradient(90deg, #e9d3d3 0%, #7c747c 100%);
+    z-index: 10;
 }
 .titulo {
-    grid-area: titulo;
+    grid-area: header;
     margin-right: 20px;
     color: rgb(69, 67, 67);
     font-size: 45px;
@@ -55,9 +57,6 @@ ul li a {
     text-decoration: none;
     color: black;
     font-family: arima;
-}
-.navBar li a:hover {
-    background-color: gray;
 }
 
 main {
@@ -90,7 +89,7 @@ h2 {
     padding-right: 150px;
     padding-top: 15px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .media {
    display: flex;
@@ -114,13 +113,13 @@ h2 {
     justify-content: space-between;
 }
 .centroHistorico {
-    grid-area: vinoTorrontes;
+    grid-area:main;
     height: 400px;
     width: 600px;
     padding: 30px 25px;
 }
 .mainTextoUno {
-    grid-area: mainTextoUno;
+    grid-area: main;
     font-family:arima;
     font-size: 25px;
     padding-left: 150px;
@@ -130,7 +129,7 @@ h2 {
     color: white;
 }
 .mainTextoDos {
-    grid-area: mainTextoDos;
+    grid-area: main;
     display: flex;
     font-family:arima;
     font-size: 20px;
@@ -140,7 +139,7 @@ h2 {
     color: white;
 }
 .mainTextoTres {
-    grid-area: mainTextoTres;
+    grid-area: main;
     display: flex;
     font-family:arima;
     font-size: 20px;
@@ -168,15 +167,6 @@ h2 {
 .fieldset{
     padding-bottom: 20px;
 }
-
-form {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-size: 22px;
-    font-weight: bolder;
-}
-
 #Nombre {
     width: 350px;
 }
@@ -188,33 +178,16 @@ form {
 #Email {
     width: 350px;
 }
-#Consulta {
-    height: 100px;
-    width: 350px;
-}
+
 footer {
     grid-area: footer;
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: #5e5d5b;
+    background-color: #928a8b;
     height: 50px;
     padding: 0 15px;
-}
-.footer__contenido {
-    grid-area: footer__contenido;
-    margin-right: 20px;
-    color: black;
-    font-size: 15px;
-    font-family:arima;
-}
-.img__footer3 {
-    grid-area: img__footer3;
-    height: 30px;
-    width: 25px;
-    padding-top: 15px;
-
 }
 
 @media screen and (max-width: 768px) and (max-width: 1024px) {
@@ -227,8 +200,6 @@ footer {
     .navBar ul li {
         font-size: 15px;
     }
-
-
     .mainTextoUno {
         font-size: 15px;
     }
@@ -240,17 +211,14 @@ footer {
     .mainTextoTres {
         font-size: 15px;
     }
-
     .media {
         display: flex;
         flex-direction: column;
     }
-
     .media2 {
         display: flex;
         flex-direction: column;
     }
-
     .media3 {
         display: flex;
         flex-direction: column;
