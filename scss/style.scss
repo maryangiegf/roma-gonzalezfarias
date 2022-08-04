@@ -1,0 +1,43 @@
+
+@import "variables";
+@import "footer";
+@import "main";
+@import "media";
+@import "header";
+
+$color-primario: #5e5d5b;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: Arima;
+    src: url(../fuentes/Arima.ttf);
+  }
+  
+  .loba {
+    background-image: url(../img/loba.jpg);
+  }
+  
+  .lugares {
+    background-color: $color-primario;
+  }
+  
+  .monumentos {
+    background-color: #848381;
+  }
+  
+  .entretenimiento {
+    background-color: #2d2a25;
+  }
+  
+  
+ 
+  
+ 
+
+ 
