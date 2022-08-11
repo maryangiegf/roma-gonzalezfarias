@@ -1,0 +1,18 @@
+.mainTextoUno {
+    grid-area: main;
+    font-family: arima;
+    font-size: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 15px;
+    text-align: center;
+    color: white; }
+  
+  .mainTextoDos {
+    @extend .mainTextoUno;
+    display: flex;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+  }

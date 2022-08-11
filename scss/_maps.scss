@@ -1,0 +1,10 @@
+$titulostyle: (grid-area: header, margin-right: 20px, color: #454343, font-size: 45px, font-family: arima);
+
+
+.titulo{
+    grid-area: map-get($map: $titulostyle, $key: grid-area);
+    margin-right:  map-get($map: $titulostyle, $key:margin-right);
+    color: map-get($map: $titulostyle, $key:color);
+    font-size:map-get($map: $titulostyle, $key: pfont-size);
+    font-family:map-get($map: $titulostyle, $key: font-family);
+}

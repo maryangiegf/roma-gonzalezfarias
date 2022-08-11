@@ -1,0 +1,15 @@
+@mixin caracteristicas ($grid, $altura, $ancho, $padd) {
+    grid-area: $grid;
+    height: $altura;
+    width: $ancho;
+    padding: $padd; 
+
+    
+}
+
+.centroHistorico {
+   @include caracteristicas(main, 400px, 600px, 30px 25px);
+ }
+   
+   
+  

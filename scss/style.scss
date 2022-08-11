@@ -1,9 +1,12 @@
 
 @import "variables";
 @import "footer";
+@import "extend";
+@import "mixin";
 @import "main";
-@import "media";
+@import "maps";
 @import "header";
+@import "media";
 
 $color-primario: #5e5d5b;
 

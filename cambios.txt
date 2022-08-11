@@ -1,0 +1,5 @@
+Se realizaron los siguientes cambios para cumplimentar con el desafío SASS II
+-Creación e importación de _maps.scss. 
+-Creación e importación de _extend.scss.
+-Creación e importación de _mixin.scss.
+-Para cumplir con el SEO, se agrego meta-description y content a todas las páginas.
