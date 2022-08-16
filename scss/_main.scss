@@ -3,28 +3,27 @@ main {
     background-color: $color-primario;
     background-size: cover;
   }
-
-// .mainTextoUno {
-//     grid-area: main;
-//     font-family: arima;
-//     font-size: 25px;
-//     padding-left: 150px;
-//     padding-right: 150px;
-//     padding-top: 15px;
-//     text-align: center;
-//     color: white;
-//   }
+  .mainTextoUno {
+  grid-area: main;
+  font-family: arima;
+  font-size: 25px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 15px;
+  text-align: center;
+  color: white;
+  }
   
-//   .mainTextoDos {
-//     grid-area: main;
-//     display: flex;
-//     font-family: arima;
-//     font-size: 20px;
-//     padding-left: 50px;
-//     padding-right: 50px;
-//     text-align: justify;
-//     color: white;
-//   }
+   .mainTextoDos {
+     grid-area: main;
+     display: flex;
+     font-family: arima;
+     font-size: 20px;
+     padding-left: 50px;
+     padding-right: 50px;
+     text-align: justify;
+     color: white;
+ }
   
   .mainTextoTres {
     grid-area: main;
@@ -35,13 +34,11 @@ main {
     text-align: justify;
     color: white;
   }
-  // .centroHistorico {
-  //   grid-area: main;
-  //   height: 400px;
-  //   width: 600px;
-  //   padding: 30px 25px;
-  // }
   
+ .mb-4 {
+   margin-bottom: 1.5rem!important;
+ }
+ 
   .contenedor {
     font-family: arima;
     display: flex;
@@ -65,3 +62,9 @@ main {
     background-image: url(../img/telefono.jpg);
     background-size: cover;
   }
+  .romaDescrizione {
+    background-color:aliceblue;
+    opacity: 85%;
+   }
+  
+  

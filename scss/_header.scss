@@ -7,19 +7,20 @@ header {
     align-items: center;
     height: 100px;
     top: 0;
-    position: sticky;
-    background-color: #e9d3d3;
-    background-image: linear-gradient(90deg, #e9d3d3 0%, #7c747c 100%);
-    }
+    background-color: #a6a3a3;
+      }
 
-// .titulo {
-//     grid-area: header;
-//     margin-right: 20px;
-//     color: rgb(69, 67, 67);
-//     font-size: 45px;
-//     font-family: arima;
-//       }
-
+h1{ font-size: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: rgb(17, 17, 18);
+    opacity: 85%;
+    background-color: aliceblue;
+  
+}
 h2 {
     font-family: arima;
     font-size: 40px;
@@ -37,16 +38,17 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-      
+         
         li {
           list-style: none;
           margin: 0 10px;
-          font-size: 20px;
+          font-size: 30px;
         }
       }
       
       ul li a {
         text-decoration: none;
-        color: black;
-        font-family: arima;
-      }
+        color: rgb(239, 221, 221);
+        font-family:serif;
+        text-transform: uppercase;
+       }
